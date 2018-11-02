@@ -1,0 +1,130 @@
+h1 {
+    text-align: center;
+}
+
+#choice-holder {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#choice1 {
+  width: 24px;
+  height: 24px;
+  border: 2px solid black;
+}
+
+#choice2 {
+  width: 24px;
+  height: 24px;
+  border: 2px solid black;
+}
+
+#choice3 {
+  width: 24px;
+  height: 24px;
+  border: 2px solid black;
+}
+
+#choice4 {
+  width: 24px;
+  height: 24px;
+  border: 2px solid black;
+}
+
+#input1 {
+  width:52px;
+  height:52px;
+  border: 2px solid black;
+  background-color: cyan;
+}
+
+#input2 {
+  width:52px;
+  height:52px;
+  border: 2px solid black;
+  background-color: cyan;
+}
+
+#input3 {
+  width:52px;
+  height:52px;
+  border: 2px solid black;
+  background-color: cyan;
+}
+
+#input4 {
+  width:52px;
+  height:52px;
+  border: 2px solid black;
+  background-color: cyan;
+}
+
+.buttons-holder {
+  display: flex;
+  flex-direction: row;
+  padding:4px
+}
+
+.cyanBtn {
+ width:52px;
+ height:52px;
+ background-color:cyan;
+ border: 1px solid black;
+}
+
+.yellowBtn {
+  width:52px;
+  height:52px;
+  background-color:yellow;
+  border: 1px solid black;
+}
+
+.magentaBtn {
+  width:52px;
+  height:52px;
+  background-color: magenta;
+  border: 1px solid black;
+}
+
+.blackBtn {
+  width:52px;
+  height:52px;
+  background-color: black;
+  border: 1px solid black;
+}
+
+.inputBoxes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction:row;
+}
+
+input
+{
+    font-size:24px;
+    height:52px;
+    width:52px;
+    text-align:center;
+}
+
+.button {
+  display:block;
+}
+
+.buttons
+{
+    display: flex;
+    justify-content: center;
+}
+
+.row{
+  text-align:center;
+
+}
+
+#choices{
+  display:flex;
+  justify-content:space-between;
+
+}
