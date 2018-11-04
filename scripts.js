@@ -69,6 +69,7 @@ const fillTarget = () => {
 $(document).ready(function(){
   fillTarget();
   console.table(target);
+  //add click handlers
   for(let i = 1; i <= 4; i++) {
     let tempId = "#cyan" + i;
     let tempInput = "#input" + i;
@@ -95,7 +96,7 @@ $(document).ready(function(){
 
   $('#verify').on('click', () => {
     console.table(inputs);
-    console.log('wtf')
+    //update user choice boxes
       for(let i = 1; i <= 4; i++) {
         let tempId = '#choice' + i;
         switch(inputs[i - 1]) {
@@ -113,7 +114,7 @@ $(document).ready(function(){
           break;
         }
       }
-
+      //check the users input
         let numbersInCorrectPlace = 0,
             numbersCorrect = 0;
           for(let i = 0; i < 4; i++){
@@ -123,8 +124,9 @@ $(document).ready(function(){
           }
           for(let i = 0; i < 4; i++) {
             for(let j = 0; j < 4; j++) {
-              if(inputs[j] === target[i]) {
+              if(inputs[i] === target[j]) {
                 numbersCorrect++;
+                break;
               }
             }
           }
