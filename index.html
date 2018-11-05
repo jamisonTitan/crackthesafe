@@ -5,6 +5,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
   <link rel="stylesheet" href="styles.css">
+    <!-- Link CSS here -->
+    <link type='text/css' rel='stylesheet' href='css/style.css' />
 </head>
 
 <body>
@@ -46,12 +48,9 @@
             <btn class="blackBtn" id="black4"></btn>
           </div>
         </div>
-  <title>Crack the Safe Game</title>
-  <!-- Link CSS here -->
-  <link type='text/css' rel='stylesheet' href='css/style.css' />
-</head>
+        <button id="verify">Verify!</button>
+    </div>
 
-<body>
 
   <!-- TASK 1: In the div below.
         1. In a header tag, add a title.
@@ -61,42 +60,22 @@
         5. Add divs to record user choice.
         6. Add a div to record correct number counts and winner
      -->
-  <div class="row">
-      <h1>Crack the safe</h1>
-      <h3>Please Submit Your Choice Below</h3>
-      <div class="inputBoxes">
-        <input id="number1">
-        <input id="number2">
-        <input id="number3">
-        <input id="number4">
-      </div>
-      <div class="buttons">
-            <button id="verify">Verify!</button>
-      </div>
+<div class='row'>
       <div>
         <h4>User Choice</h4>
-        <p id="userChoice"></p>
         <div id="choice-holder">
           <div id="choice1"></div>
           <div id="choice2"></div>
           <div id="choice3"></div>
           <div id="choice4"></div>
         </div>
-        <h4>Results</h4>
-        <div id="results"></div>
+        <p id="results"></p>
       </div>
-
-  </div>
-    <script src='scripts.js'></script>
-        <h4>Results</h4>
-        <div id="results"></div>
-      </div>
-
-  </div>
+</div>
   <!-- Link JQuery here -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <!-- Link script.js here -->
-  <script src='js/script.js'></script>
+  <script src='scripts.js'></script>
 </body>
 
 </html>

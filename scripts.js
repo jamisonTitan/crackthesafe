@@ -9,7 +9,7 @@ const inputs = [0,0,0,0];
 const target = [];
 
 let img;
-let scale = 2;
+let scale = 3;
 let chars = ['$','@','B','%','8','&','W','M','#','*','o','a',
 'k','b','d','p','q','w','m','Z','o','0','Q','L','C','J','U',
 'Y','X','z','c','v','n','x','r','j','f','t','/','\\','|','(',
@@ -33,8 +33,8 @@ function setup() {
 
 function draw() {
     img.loadPixels();
-    for(let x = 0; x < w; x+= scale * 1.5) {
-      for(let y = 0; y < h; y+= scale * 1.5) {
+    for(let x = 0; x < w; x+= scale * 1) {
+      for(let y = 0; y < h; y+= scale * 1) {
         let index = (x + y * w) * 4;
         noStroke();
         let c =
@@ -44,7 +44,7 @@ function draw() {
         for(let i = 0; i < chars.length; i++) {
           if((c > i * 255 /chars.length) && (c < (i + 1) * 255 / chars.length)){
             fill(0);
-            textSize(scale * 2);
+            textSize(scale);
             text(chars[i] ,x / scale,y / scale);
           }
         }
@@ -130,7 +130,7 @@ $(document).ready(function(){
               }
             }
           }
-          $(results).text('Number correct:' + numbersCorrect +
+          $("#results").text('Number correct:' + numbersCorrect +
           ', number in correct place:' + numbersInCorrectPlace);
       });
   });
